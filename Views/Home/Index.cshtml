@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+     @foreach (var item in @ViewBag.listaClientes)
+ {
+ <tr>
+ <thscope="row">@item.Id</th>
+ <td>@item.Nome</td>
+ <td>@item.Cpf</td>
+ <td>@item.Email</td>
+ <td>@item.Paciente</td>
+ </tr>
+ }
+ @foreach (var item in @ViewBag.listaFornecedores)
+ {
+ <tr>
+ <thscope="row">@item.Id</th>
+ <td>@item.Nome</td>
+ <td>@item.Cnpj</td>
+ <td>@item.Email</td>
+ </tr>
+ }
+</div>
